@@ -2,7 +2,7 @@
 # Builds docker image and clones the LLVM repo
 # Only needs to be run once
 
-LLVM_PROJECT_BRANCH=release/13.x
+LLVM_PROJECT_BRANCH=main
 
 if ! [ $(which docker) ]; then
     echo "Requires docker to be installed, exiting..."
