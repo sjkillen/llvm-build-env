@@ -13,7 +13,6 @@ if ! [ $(which git) ]; then
     exit 1
 fi
 
-
 git clone --depth=1 -b $LLVM_PROJECT_BRANCH https://github.com/llvm/llvm-project
 
 sudo docker build --tag sjkillen/llvm-build-env ./docker
